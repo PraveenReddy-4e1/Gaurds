@@ -1,0 +1,18 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://st.depositphotos.com/2036511/4057/v/950/depositphotos_40575119-stock-illustration-login-button.jpg" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form (ngSubmit)="onLoginSumbit(loginForm)" #loginForm="ngForm">
+        <input type="text" class="fadeIn second" name="email" placeholder="Enter Email" [(ngModel)]="email" name="email">
+        <input type="text" class="fadeIn third" name="password" placeholder="Enter Password" [(ngModel)]="password" name="password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+    </div>
+  </div>
